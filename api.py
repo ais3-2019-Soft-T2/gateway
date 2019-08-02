@@ -14,5 +14,6 @@ def home():
     filename = content['name'] + '_' + content['version']
     urllib.request.urlretrieve(content['url'], filename)
     return "OK!\n"
-    
-app.run(port=5555)
+
+if __name__ == '__main__':
+    app.run(port=5555)
