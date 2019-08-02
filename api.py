@@ -1,4 +1,3 @@
-import flask
 import urllib.request
 import requests
 import os.path
