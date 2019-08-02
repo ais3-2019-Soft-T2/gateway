@@ -17,5 +17,6 @@ def home():
         os.makedirs(content['name'])
     urllib.request.urlretrieve(content['url'], filepath)
     return "OK!\n"
-    
-app.run()
+
+if __name__ == '__main__':
+    app.run(port=5555)
