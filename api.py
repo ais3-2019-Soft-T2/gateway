@@ -1,11 +1,11 @@
 import urllib.request
 import requests
 import os.path
-from flask import jsonify, request
+from flask import jsonify, request, Flask
 import paho.mqtt.client as mqtt
 import base64
 
-app = flask.Flask(__name__)
+app = Flask(__name__)
 app.config["DEBUG"] = True
 app.config["JSON_AS_ASCII"] = False
 
